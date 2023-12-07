@@ -8,27 +8,106 @@
   </head>
   <body>
     <!-- header -->
-    <header class=" bg-whiteGray flex justify-between items-center">
-      <div>
-        <img src="../asset/img/Logo header.png" alt="Logo Digital-Fibre" class="w-[330px]">
-      </div>
-      <div class="headerLinks md:flex space-x-9 hidden pr-16">
-        <nav>
-          <ul class="flex space-x-6">
-            <li class="font-semibold">Société</li>
-            <li class="font-semibold">Solutions</li>
-            <li class="font-semibold">Indicateurs</li>
-            <li class="font-semibold">Equipe</li>
-            <li class="font-semibold">Actu</li>
-            <li class="font-semibold">Jobs</li>
-            <li class="font-semibold">Contact</li>
-          </ul>
-        </nav>
-        <div class="action flex space-x-6">
-          <span>search</span>
-          <span>login</span>
+    <header class="bg-whiteGray flex justify-between items-center">
+      <nav class="w-full">
+        <div
+          class=" w-full flex items-center justify-between"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="../asset/img/Logo header.png"
+              alt="Logo Digital-Fibre"
+              class="h-14 md:h-16"
+            />
+          </a>
+
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 "
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+
+          <div class="hidden w-full lg:flex lg:w-auto space-x-6 pr-16" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Société</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Indicateurs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Equipe</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Actu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Jobs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="action flex space-x-6">
+              <span>search</span>
+              <span>login</span>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!-- page content  -->
@@ -91,7 +170,7 @@
           <span class="text-lightGreen">NOS</span> SOLUTIONS
         </h2>
         <div
-          class="solutionList bg-lightGreen px-16 py-16 grid gap-11 grid-cols-1 sm:px-24 md:px-12 lg:px-24 md:grid-cols-2 xl:grid-cols-3"
+          class="solutionList bg-lightGreen px-16 py-16 grid gap-11 grid-cols-1 sm:px-24 md:px-12 lg:px-24 md:grid-cols-2 xl:grid-cols-3" style="background-image: url(../asset/img/PJ-5.jpg);"
         >
           <div class="card bg-white px-5 py-4 rounded-lg">
             <div class="cardHead flex">
@@ -144,7 +223,13 @@
       </div>
 
       <div id="whoWeAre" class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="left" style="background-image: url(../asset/img/WhoweAre.png); height: 100vh;"></div>
+        <div
+          class="left"
+          style="
+            background-image: url(../asset/img/WhoweAre.png);
+            height: 100vh;
+          "
+        ></div>
         <div class="right px-16">
           <h2 class="text-primary text-3xl font-bold col-12 text-start py-5">
             <span class="text-lightGreen">QUI</span> SOMMES NOUS?
@@ -173,7 +258,10 @@
       </div>
 
       <div id="ourSolutions" class="FTTH grid grid-cols-1 lg:grid-cols-2">
-        <div class="left" style="background-image: url(../asset/img/PJ\ 1.jpg); height: 100vh;"></div>
+        <div
+          class="left"
+          style="background-image: url(../asset/img/PJ\ 1.jpg); height: 100vh"
+        ></div>
         <div class="right px-16">
           <h2 class="text-primary text-3xl font-bold col-12 text-start py-5">
             <span class="text-lightGreen">NOS</span> SOLUTIONS
@@ -210,7 +298,10 @@
       </div>
 
       <div id="ourSolutions" class="FTTO grid grid-cols-1 lg:grid-cols-2">
-        <div class="left" style="background-image: url(../asset/img/PJ\ 3.jpeg); height: 100vh;"></div>
+        <div
+          class="left"
+          style="background-image: url(../asset/img/PJ\ 3.jpeg); height: 100vh"
+        ></div>
         <div class="right px-16">
           <h2 class="text-primary text-3xl font-bold col-12 text-start py-5">
             <span class="text-lightGreen">NOS</span> SOLUTIONS
@@ -248,7 +339,10 @@
       </div>
 
       <div id="ourSolutions" class="Etude grid grid-cols-1 lg:grid-cols-2">
-        <div class="left" style="background-image: url(../asset/img/PJ-4.png); height: 100vh;"></div>
+        <div
+          class="left"
+          style="background-image: url(../asset/img/PJ-4.png); height: 100vh"
+        ></div>
         <div class="right px-16">
           <h2 class="text-primary text-3xl font-bold col-12 text-start py-5">
             <span class="text-lightGreen">NOS</span> SOLUTIONS
@@ -284,7 +378,9 @@
           class="ActuList px-16 py-16 grid gap-11 grid-cols-1 sm:px-24 md:px-12 md:grid-cols-2 lg:px-24"
         >
           <div class="actuOne">
-            <div class="img"></div>
+            <div class="img mb-4">
+              <img src="../asset/img/BlogImg.jpg" alt="Blog image" />
+            </div>
             <div class="description">
               <div class="title mb-3">
                 <h3 class="font-bold text-sm">
@@ -314,7 +410,9 @@
           </div>
 
           <div class="actuTwo">
-            <div class="img"></div>
+            <div class="img mb-4">
+              <img src="../asset/img/BlogImg.jpg" alt="Blog image" />
+            </div>
             <div class="description">
               <div class="title mb-3">
                 <h3 class="font-bold text-sm">
@@ -346,12 +444,15 @@
       </div>
 
       <div id="actuDetail">
-        <div style="background-image: url(../asset/img/AdobeStock_113583973.jpeg);" class="h-96 flex justify-center items-center">
-            <h2
-          class="text-lightGreen text-3xl font-bold col-12 text-center py-5"
+        <div
+          style="background-image: url(../asset/img/AdobeStock_113583973.jpeg)"
+          class="h-96 flex justify-center items-center"
         >
-          <span class="text-white">NOS ACTUS</span> TITLE
-        </h2>
+          <h2
+            class="text-lightGreen text-3xl font-bold col-12 text-center py-5"
+          >
+            <span class="text-white">NOS ACTUS</span> TITLE
+          </h2>
         </div>
         <div class="actuDetailList px-16 py-16 sm:px-24 md:px-12 lg:px-24">
           <div class="mb-7">
@@ -401,7 +502,9 @@
           RECRUTEMENTS
         </h2>
 
-        <div class="solutionList bg-lightGreen px-16 py-16 sm:px-24 md:px-12 lg:px-24">
+        <div
+          class="solutionList bg-lightGreen px-16 py-16 sm:px-24 md:px-12 lg:px-24" style="background-image: url(../asset/img/PJ-joob\ 1.jpg);"
+        >
           <p class="text-center text-white mb-12">
             « LES MEILLEURES CHOSES QUI ARRIVENT DANS LE MONDE DE L’ENTREPRISE
             NE SONT PAS LE RÉSULTAT DU TRAVAIL D’UN SEUL HOMME. C’EST LE TRAVAIL
@@ -477,7 +580,7 @@
 
             <div class="seeMoreSection flex justify-center items-center">
               <span
-                class="border border-white rounded-full font-normal text-white w-[100px] h-[100px] flex justify-center items-center p-2 text-center"
+                class="border-2 border-white rounded-full font-normal text-white w-[100px] h-[100px] flex justify-center items-center p-2 text-center"
                 >LOAD MORE</span
               >
             </div>
@@ -495,7 +598,9 @@
         </h2>
 
         <div class="opportDetails px-16 py-16 sm:px-24 md:px-12 lg:px-24">
-          <div class="border border-primary grid grid-cols-1 lg:grid-cols-6 gap-12 px-7 py-5">
+          <div
+            class="border border-primary grid grid-cols-1 lg:grid-cols-6 gap-12 px-7 py-5"
+          >
             <div class="lg:col-span-2">
               <h2 class="font-bold">ZONE GÉOGRAPHIQUE :</h2>
               <p>
@@ -600,10 +705,16 @@
         <h2 class="text-lightGreen text-3xl font-bold col-12 text-center py-5">
           CONTACTS
         </h2>
-        <div class="contactList grid grid-cols-1 lg:grid-cols-6 gap-7 lg:gap-5 px-16 py-16 sm:px-24 md:px-12 lg:px-24">
+        <div
+          class="contactList grid grid-cols-1 lg:grid-cols-6 gap-7 lg:gap-5 px-16 py-16 sm:px-24 md:px-12 lg:px-24"
+        >
           <div class="col-span-2">
             <div class="mb-5">
-                <img src="../asset/img/logoMultiColor.png" alt="Logo Digital-Fibre" class="w-[200px]">
+              <img
+                src="../asset/img/logoMultiColor.png"
+                alt="Logo Digital-Fibre"
+                class="w-[200px]"
+              />
             </div>
             <div id="contactInfoDetail">
               <div class="flex space-x-3">
@@ -626,18 +737,24 @@
           </div>
           <div class="col-span-4">
             <form class="flex flex-col">
-              <div class="w-full mb-5 flex space-x-4">
+              <div
+                class="w-full mb-5 flex flex-col md:flex-row space-y-3 md:space-x-4 md:space-y-0"
+              >
                 <input
                   type="text"
                   placeholder="NAME"
-                  class="border w-1/3 py-2 px-2"
+                  class="border-2 border-black w-full md:w-1/3 py-2 px-2"
                 />
                 <input
                   type="text"
                   placeholder="EMAIL"
-                  class="border w-1/3 py-2 px-2"
+                  class="border-2 border-black w-full md:w-1/3 py-2 px-2"
                 />
-                <select name="" id="" class="border w-1/3 py-2 px-2">
+                <select
+                  name=""
+                  id=""
+                  class="border-2 border-black w-full md:w-1/3 py-2 px-2"
+                >
                   <option value="commercial">Commercial</option>
                   <option value="administratif">Administratif</option>
                   <option value="recrutement">Recrutement</option>
@@ -645,7 +762,12 @@
                   <option value="autre">Autre</option>
                 </select>
               </div>
-              <textarea name="" id="" rows="5" class="border py-2 px-2">
+              <textarea
+                name=""
+                id=""
+                rows="5"
+                class="border-2 border-black py-2 px-2"
+              >
     MESSAGE</textarea
               >
               <input
