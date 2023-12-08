@@ -103,8 +103,12 @@
               </li>
             </ul>
             <div class="action flex space-x-6">
-              <span><img src="../asset/icon/searchIco.png" alt="" class="h-6"></span>
-              <span><img src="../asset/icon/Login ico.png" alt="" class="h-6"></span>
+              <span
+                ><img src="../asset/icon/searchIco.png" alt="" class="h-6"
+              /></span>
+              <span
+                ><img src="../asset/icon/Login ico.png" alt="" class="h-6"
+              /></span>
             </div>
           </div>
         </div>
@@ -112,7 +116,24 @@
     </header>
 
     <!-- page content  -->
-    <main>
+    <main class="relative">
+      <div id="hero" class="h-[600px] overflow-hidden">
+        <div class="">
+          <video autoplay="autoplay" class="w-full h-full">
+            <source src="../asset/img/bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="bg-black bg-opacity-50 w-full text-white text-center absolute top-0 z-50 h-[600px] flex justify-center items-center flex-col"
+        >
+          <h2 class="font-bold text-4xl">Our Website is Coming Soon</h2>
+          <p class="w-[600px] mt-3">
+            We're working hard to finish the development of this site. Sign up
+            below to receive updates and to be notified when we launch!
+          </p>
+        </div>
+      </div>
+
       <div class="indicateurs">
         <h2 class="text-primary text-3xl font-bold col-12 text-center py-5">
           <span class="text-lightGreen">NOS</span> INDICATEURS
@@ -187,7 +208,7 @@
           style="background-image: url(../asset/img/PJ-5.jpg)"
         >
           <div class="card bg-[#F9F9F8] px-5 py-4 rounded-lg">
-            <div class="cardHead flex items-end space-x-3">
+            <div class="cardHead flex items-end space-x-3 mb-2">
               <span
                 ><img src="../asset/icon/icon7.png" alt="" class="w-20"
               /></span>
@@ -205,7 +226,7 @@
           </div>
 
           <div class="card bg-[#F9F9F8] px-5 py-4 rounded-lg">
-            <div class="cardHead flex items-end space-x-3">
+            <div class="cardHead flex items-end space-x-3 mb-2">
               <span
                 ><img src="../asset/icon/icon8.png" alt="" class="w-16"
               /></span>
@@ -223,7 +244,7 @@
           </div>
 
           <div class="card bg-[#F9F9F8] px-5 py-4 rounded-lg">
-            <div class="cardHead flex items-end space-x-3">
+            <div class="cardHead flex items-end space-x-3 mb-2">
               <span
                 ><img src="../asset/icon/icon9.png" alt="" class="w-16"
               /></span>
@@ -244,12 +265,16 @@
 
       <div id="whoWeAre" class="grid grid-cols-1 lg:grid-cols-2">
         <div
-          class="left bg-no-repeat bg-cover"
+          class="left bg-no-repeat bg-cover flex justify-center"
           style="
             background-image: url(../asset/img/WhoweAre.png);
             height: 100vh;
           "
-        ></div>
+        >
+          <div class="p-6">
+            <img src="../asset/img/logoWhite.png" alt="" class="" />
+          </div>
+        </div>
         <div class="right px-16 relative pt-7 pb-12">
           <span class="absolute top-0 left-0">
             <svg
@@ -288,15 +313,22 @@
               accompagnons nos clients sur l’ensemble de leurs besoins,
               proposant des solutions globales ou spécifiques.
             </p>
+            <div class="mt-7">
+              <img src="../asset/img/WhoareWeIMG.png" alt="" class="w-full" />
+            </div>
           </div>
         </div>
       </div>
 
       <div id="ourSolutions" class="FTTH grid grid-cols-1 lg:grid-cols-2">
         <div
-          class="left bg-no-repeat bg-cover"
+          class="left bg-no-repeat bg-cover flex justify-center"
           style="background-image: url(../asset/img/PJ\ 1.jpg); height: 100vh"
-        ></div>
+        >
+          <div class="p-6">
+            <img src="../asset/img/logoBlack.png" alt="" class="" />
+          </div>
+        </div>
         <div class="right px-16 relative pt-7 pb-12">
           <span class="absolute top-0 left-0">
             <svg
@@ -349,9 +381,13 @@
 
       <div id="ourSolutions" class="FTTO grid grid-cols-1 lg:grid-cols-2">
         <div
-          class="left bg-no-repeat bg-cover"
+          class="left bg-no-repeat bg-cover flex justify-center"
           style="background-image: url(../asset/img/PJ\ 3.jpeg); height: 100vh"
-        ></div>
+        >
+          <div class="p-6">
+            <img src="../asset/img/logoBlack.png" alt="" class="" />
+          </div>
+        </div>
         <div class="right px-16 relative pt-7 pb-12">
           <span class="absolute top-0 left-0">
             <svg
@@ -405,9 +441,13 @@
 
       <div id="ourSolutions" class="Etude grid grid-cols-1 lg:grid-cols-2">
         <div
-          class="left bg-no-repeat bg-cover"
+          class="left bg-no-repeat bg-cover flex justify-center"
           style="background-image: url(../asset/img/PJ-4.png); height: 100vh"
-        ></div>
+        >
+          <div class="p-6">
+            <img src="../asset/img/logoBlack.png" alt="" class="" />
+          </div>
+        </div>
         <div class="right px-16 relative pt-7 pb-12">
           <span class="absolute top-0 left-0">
             <svg
@@ -452,9 +492,13 @@
 
       <div id="equipe" class="Equipe grid grid-cols-1 lg:grid-cols-2">
         <div
-          class="left bg-no-repeat bg-cover"
+          class="left bg-no-repeat bg-cover flex justify-center"
           style="background-image: url(../asset/img/PJ\ 5.jpeg); height: 100vh"
-        ></div>
+        >
+          <div class="p-6">
+            <img src="../asset/img/logoWhite.png" alt="" class="" />
+          </div>
+        </div>
         <div class="right px-16 relative pt-7 pb-12">
           <span class="absolute top-0 left-0">
             <svg
@@ -596,14 +640,16 @@
         >
           <div class="flex justify-center items-center">
             <!-- <img src="../asset/img/logo-sogetrel-2x-2.png" alt=""> -->
-            Free
+            <span>
+              <img src="../asset/img/FreeLogo.png" alt="" class="w-40">
+            </span>
           </div>
 
           <div class="flex justify-evenly items-center">
             <img
-              src="../asset/img/logo-sogetrel-2x-2.png"
+              src="../asset/img/engieLogo.png"
               alt=""
-              class="h-24"
+              class="h-20"
             />
             <img src="../asset/img/SADE.png" alt="" class="h-24" />
           </div>
@@ -614,7 +660,7 @@
           </div>
 
           <div class="flex justify-evenly items-center">
-            <img src="../asset/img/circet.png" alt="" class="h-24" />
+            <img src="../asset/img/circet.png" alt="" class="h-40" />
             <img
               src="../asset/img/logo-sogetrel-2x-2.png"
               alt=""
@@ -623,7 +669,9 @@
           </div>
           <div class="flex justify-center items-center">
             <!-- <img src="../asset/img/logo-sogetrel-2x-2.png" alt=""> -->
-            Eiffage
+            <span>
+              <img src="../asset/img/eiffage-1.svg" alt="" class="w-40">
+            </span>
           </div>
         </div>
       </div>
@@ -976,20 +1024,34 @@
               />
             </div>
             <div id="contactInfoDetail">
-              <div class="flex space-x-3">
-                <span>Icon</span>
+              <div class="flex space-x-3 mb-2">
+                <span
+                  ><img
+                    src="../asset/icon/localizationico.png"
+                    alt=""
+                    class="w-6"
+                /></span>
                 <p class="text-sm">32, rue de Paradis – 75010 PARIS</p>
               </div>
-              <div class="flex space-x-3">
-                <span>Icon</span>
+              <div class="flex space-x-3 mb-2">
+                <span
+                  ><img
+                    src="../asset/icon/localizationico.png"
+                    alt=""
+                    class="w-6"
+                /></span>
                 <p class="text-sm">15, rue Sambre et Meuse – 75010 PARIS</p>
               </div>
-              <div class="flex space-x-3">
-                <span>Icon</span>
+              <div class="flex space-x-3 mb-2">
+                <span
+                  ><img src="../asset/icon/phone.png" alt="" class="w-6"
+                /></span>
                 <p class="text-sm">+33 (0)1.80.97.78.51</p>
               </div>
               <div class="flex space-x-3">
-                <span>Icon</span>
+                <span
+                  ><img src="../asset/icon/wwweb.png" alt="" class="w-6"
+                /></span>
                 <p class="text-sm">www.digital-fibre.com</p>
               </div>
             </div>
